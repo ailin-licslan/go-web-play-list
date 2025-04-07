@@ -12,8 +12,8 @@ import (
 */
 
 func IndexHandler(c *gin.Context) {
-	// c.HTML(http.StatusOK, "index.html", nil)
-	c.JSON(http.StatusOK, "Welcome")
+	c.HTML(http.StatusOK, "index.html", nil)
+	//c.JSON(http.StatusOK, "Welcome")
 }
 
 func CreateTodo(c *gin.Context) {
