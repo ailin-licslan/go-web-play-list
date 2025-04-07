@@ -10,7 +10,7 @@ func SetupRouter() *gin.Engine {
 	if setting.Conf.Release {
 		gin.SetMode(gin.ReleaseMode)
 	}
-	r := gin.Default()
+	r := gin.Default() //如果放开下面的 2个注释  不用依赖前端服务  已经打包为了静态文件放在后端服务一起了
 	// 告诉gin框架模板文件引用的静态文件去哪里找
 	//r.Static("/static", "static")
 	// 告诉gin框架去哪里找模板文件
