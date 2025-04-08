@@ -40,7 +40,27 @@ func main() {
 	}()
 	wg.Wait()
 
-	//TEST Exercise 3 面向对象  TODO
+	//TEST Exercise 3 面向对象 (1.计算面积   2.员工信息)
+	// 创建矩形实例
+	rectangle := Rectangle{Width: 5, Height: 3}
+	// 调用矩形的面积和周长方法
+	fmt.Printf("Rectangle Area: %.2f\n", rectangle.Area())
+	fmt.Printf("Rectangle Perimeter: %.2f\n", rectangle.Perimeter())
+	// 创建圆形实例
+	circle := Circle{Radius: 4}
+	// 调用圆形的面积和周长方法
+	fmt.Printf("Circle Area: %.2f\n", circle.Area())
+	fmt.Printf("Circle Perimeter: %.2f\n", circle.Perimeter())
+
+	//创建一个Employee实例
+	employee := Employee{
+		EmployeeID: 1,
+		Person: Person{
+			Name: "LIN",
+			Age:  20,
+		},
+	}
+	employee.printInfo()
 
 	//TEST Exercise 4 channel  TODO
 
