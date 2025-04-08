@@ -44,10 +44,17 @@ func main() {
 	u3 := Student{Name: "H", Age: 13, Gender: "3"}
 
 	// 创建记录
+	tx := db.Begin()
+	if tx.Error != nil {
+		panic("开启事务失败")
+	}
+	// 执行多个数据库操作
 	db.Create(&u0)
 	db.Create(&u1)
 	db.Create(&u2)
 	db.Create(&u3)
+	// 提交事务
+	tx.Commit()
 
 	// 查询
 	var u = new(Student)
