@@ -126,7 +126,6 @@ go-web-play.exe conf/config.ini
 │   └── controller.go
 ├── dao             DB数据层
 │   └── mysql.go
-├── docs            swagger文件层
 ├── models          输入输出结构层
 │   └── todo.go
 ├── setting        配置文件信息
@@ -145,3 +144,38 @@ go-web-play.exe conf/config.ini
 └── routers          路由层
     └── routers.go
 ```
+
+6 Web3.0 exercise 考虑后续单独拿出来
+```
+
+├── task1          
+│   ├── Leetcode 21
+│   ├── Leetcode 26
+│   └── ...
+│   └── Leetcode 729
+├── task2          
+│   ├── goroutin.go
+│   ├── main.go
+│   └── pointer.go
+├── task3          
+│   ├── 
+│   ├── 
+│   └── 
+├── task3          
+│   ├── 
+│   ├── 
+│   └── 
+├── task4          
+│   ├── 
+│   ├── 
+│   └── 
+├── task5          
+│   ├── 
+│   ├── 
+│   └── 
+├── task6          
+│   ├── 
+│   ├── 
+│   └── 
+```
+
