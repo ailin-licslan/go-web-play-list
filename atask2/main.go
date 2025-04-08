@@ -5,6 +5,10 @@ import (
 	"sync"
 )
 
+/*
+*
+a xxxx  每个名字加 a 为了main放最下面
+*/
 func main() {
 
 	//TEST Exercise 1  指针
@@ -62,8 +66,36 @@ func main() {
 	}
 	employee.printInfo()
 
-	//TEST Exercise 4 channel  TODO
+	//TEST Exercise 4 CHANNEL
+	ch := make(chan int)
+	go generator(ch) //ch 里面填充数据
+	go printer(ch)   //打印ch通道中的数据
+	var input string
+	_, _ = fmt.Scanln(&input)
 
-	//TEST Exercise 3 锁机制  TODO
+	//带缓冲区
+	chBuffer := make(chan int, 20)
+	go producer(chBuffer)
+	go consumer(chBuffer)
+	var inputBuffer string
+	_, _ = fmt.Scanln(&inputBuffer)
 
+	//TEST Exercise 5 锁机制
+	var wgs sync.WaitGroup
+	wgs.Add(10) //设置需要等待的协程数为10个
+	for i := 0; i < 10; i++ {
+		//启动10个协程 执行increment方法
+		go increment(&wgs)
+	}
+	wgs.Wait() //阻塞main 函数 直到10个协程都完成计数器递增操作
+	fmt.Println("Final counter value:", counter)
+
+	var wgs2 sync.WaitGroup
+	wgs2.Add(10) //设置需要等待的协程数为10个
+	for i := 0; i < 10; i++ {
+		//启动10个协程 执行increment方法
+		go increment2(&wgs2)
+	}
+	wgs2.Wait() //阻塞main 函数 直到10个协程都完成计数器递增操作
+	fmt.Println("Final counter2 value:", counter2)
 }
