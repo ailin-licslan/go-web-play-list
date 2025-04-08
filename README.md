@@ -147,7 +147,6 @@ go-web-play.exe conf/config.ini
 
 6 Web3.0 exercise 考虑后续单独拿出来
 ```
-
 ├── task1          
 │   ├── Leetcode 21
 │   ├── Leetcode 26
