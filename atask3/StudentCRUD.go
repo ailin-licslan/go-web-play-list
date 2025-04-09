@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/jinzhu/gorm"
-	_ "github.com/jinzhu/gorm/dialects/mysql" //old gorm jin zhu team
+	"github.com/jinzhu/gorm"                  //"gorm.io/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql" //old gorm jin zhu team  (老版本的)   建议使用新的版本"gorm.io/driver/mysql"
 )
 
 /**
