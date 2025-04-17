@@ -20,7 +20,7 @@
 ## 使用指南
 ### 下载
 ```bash
-git clone https://github.com/ailin-licslin/go-web-play.git
+git clone https://github.com/ailin-licslin/go-web-play-list.git
 ```
 ### 配置MySQL
 1. 在你的数据库中执行以下命令，创建本项目所用的数据库：
