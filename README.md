@@ -145,7 +145,7 @@ go-web-play.exe conf/config.ini
     └── routers.go
 ```
 
-6 Web3.0 exercise 考虑后续单独拿出来
+6 Web3.0 back end exercise 考虑后续单独拿出来
 ```
 ├── task1          
 │   ├── Leetcode 21
@@ -157,24 +157,16 @@ go-web-play.exe conf/config.ini
 │   ├── main.go
 │   └── pointer.go
 ├── task3          
-│   ├── 
-│   ├── 
-│   └── 
-├── task3          
-│   ├── 
-│   ├── 
-│   └── 
+│   ├── Gorm1-3
+│   ├── sql1-2
+│   └── transaction & CRUD
 ├── task4          
-│   ├── 
-│   ├── 
-│   └── 
+│   ├── GO-BLOG (https://github.com/ailin-licslan/go-blog-build)
 ├── task5          
-│   ├── 
-│   ├── 
-│   └── 
+│   ├── 5.1-5.7 (WEB3行业了解)
 ├── task6          
-│   ├── 
-│   ├── 
-│   └── 
+│   ├── ERC20   (SOLIDITY)
+│   ├── ERC721  (SOLIDITY)
+│   └── BEGGING (SOLIDITY)
 ```
 
